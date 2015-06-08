@@ -1,6 +1,6 @@
 <%@include file="dashboard-header.jsp"%>
 
-
+ 
 	<div id="page-wrapper">
 
 		<div class="container-fluid">
@@ -9,9 +9,12 @@
 			<div class="row">
 				<div class="col-lg-12">
 					<h1 class="page-header">
-						Dashboard <small>Statistics</small>
+						Dashboard <small>Stats</small>
 					</h1>
 					<ol class="breadcrumb">
+					
+					
+					
 						<li class="active"><i class="fa fa-dashboard"></i> Dashboard/Statistics
 						</li>
 					</ol>
@@ -29,7 +32,7 @@
                             <table class="table table-bordered table-hover table-striped">
                                 <thead>
                                     <tr>
-                                    	<th>ID</th>
+                                    	<th>Number</th>
                                         <th>Word</th>
                                         <th>Amount</th>
                                         
@@ -37,6 +40,8 @@
                                     </tr>
                                 </thead>
                                 <tbody>
+								
+									<!-- wyswieltenie foreach listy slow -->
                                    <c:forEach var="word" items="${wordList}">
                                    <tr>
                                    		<td>${word.idStats }</td>
@@ -44,7 +49,12 @@
                                    		<td>${word.amount }</td>
                                    </tr>
                                    </c:forEach>
-                                   
+									<tr></tr>
+									
+									
+									
+									  
+									
                
                                 </tbody>
                             </table>
