@@ -21,13 +21,7 @@ public class Word{
 	private String word;
 	private int amount;
 
-
-	public Word() {}
-	
-
-
-
-
+	public Word() {/**/}
 
 	@Id
 	@GeneratedValue
@@ -36,18 +30,14 @@ public class Word{
 		return idStats;
 	}
 
-
 	public void setIdStats(int idStats) {
 		this.idStats = idStats;
 	}
-
-	
 	
 	@Column(name = "amount", nullable = false, length = 11)
 	public int getAmount() {
 		return amount;
 	}
-
 
 	public void setAmount(int amount) {
 		this.amount = amount;
@@ -58,18 +48,7 @@ public class Word{
 		return word;
 	}
 
-
-
-	
-
 	public void setWord(String word) {
 		this.word = word;
 	}
-
-
-	
-
-
-
-	
 }

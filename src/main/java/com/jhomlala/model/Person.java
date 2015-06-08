@@ -25,10 +25,7 @@ public class Person
 	private String password;
 	private List <PersonRole> roles;
 
-	public Person()
-	{
-		
-	}
+	public Person() {/**/}
 
 	@Id
 	@GeneratedValue
@@ -36,7 +33,6 @@ public class Person
 	public int getId() {
 		return id;
 	}
-
 
 	public void setId(int id) {
 		this.id = id;
@@ -47,7 +43,6 @@ public class Person
 		return login;
 	}
 
-
 	public void setLogin(String login) {
 		this.login = login;
 	}
@@ -57,12 +52,9 @@ public class Person
 		return password;
 	}
 
-
 	public void setPassword(String password) {
 		this.password = password;
 	}
-
-	
 
 	@Transient
 	public List<PersonRole> getRoles() {
@@ -72,8 +64,4 @@ public class Person
 	public void setRoles(List<PersonRole> roles) {
 		this.roles = roles;
 	}
-
-
-	
-	
 }

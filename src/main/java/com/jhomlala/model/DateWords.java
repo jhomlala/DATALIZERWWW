@@ -10,25 +10,14 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "date", catalog = "TeamCity_database")
 
-
-
 public class DateWords {
 
 	private Integer iddate;
 	private Timestamp date;
 	
-	
-	
 	@Id
 	@GeneratedValue
 	@Column(name = "iddate", unique = true, nullable = false, length = 11)
-	
-	public Integer getIddate() {
-		return iddate;
-	}
-	public void setIddate(Integer iddate) {
-		this.iddate = iddate;
-	}
 	
 	@Column(name = "date", nullable = false)
 	public Timestamp getDate() {
@@ -37,12 +26,11 @@ public class DateWords {
 	public void setDate(Timestamp date) {
 		this.date = date;
 	}
-
 	
-	
-	
-
-
-	
-	
+	public Integer getIddate() {
+		return iddate;
+	}
+	public void setIddate(Integer iddate) {
+		this.iddate = iddate;
+	}
 }
