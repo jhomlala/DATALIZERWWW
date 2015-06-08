@@ -22,30 +22,34 @@
 			<div class="row">
 				<div class="col-lg-12">
 					<div class="post">
+					<c:if test="${not empty wordList}">
 					  <h2>Most Revelant Words</h2>
+					  <h4>Last update: ${lastDate }</h4>
                         <div class="table-responsive">
                             <table class="table table-bordered table-hover table-striped">
                                 <thead>
                                     <tr>
+                                    	<th>ID</th>
                                         <th>Word</th>
-                                        <th>Count</th>
+                                        <th>Amount</th>
+                                        
 
                                     </tr>
                                 </thead>
                                 <tbody>
+                                   <c:forEach var="word" items="${wordList}">
+                                   <tr>
+                                   		<td>${word.idStats }</td>
+                                   		<td>${word.word }</td>
+                                   		<td>${word.amount }</td>
+                                   </tr>
+                                   </c:forEach>
                                    
-                                     <tr>
-                                        <td>Uniwersytet</td>
-                                        <td>201345</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Zielonogórski</td>
-                                        <td>201341</td>
-                                    </tr>
-                                    
+               
                                 </tbody>
                             </table>
                         </div>
+                        </c:if>
 					</div>
 				</div>
 			</div>

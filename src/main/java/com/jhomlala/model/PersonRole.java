@@ -13,7 +13,7 @@ import javax.persistence.Table;
 import javax.persistence.UniqueConstraint;
 
 @Entity
-@Table(name = "person_roles", catalog = "datalizer")
+@Table(name = "person_roles", catalog = "TeamCity_database")
 public class PersonRole{
 
 	private Integer personRoleID;

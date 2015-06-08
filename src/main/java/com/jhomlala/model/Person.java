@@ -16,7 +16,7 @@ import javax.persistence.Transient;
 
 import java.util.Set;
 @Entity
-@Table( name = "person", catalog = "datalizer" )
+@Table( name = "person", catalog = "TeamCity_database" )
 
 public class Person 
 {

@@ -8,12 +8,14 @@ import java.util.Map;
 import javax.servlet.http.HttpServletRequest;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.security.authentication.AnonymousAuthenticationToken;
 import org.springframework.security.authentication.BadCredentialsException;
 import org.springframework.security.authentication.LockedException;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Controller;
 import org.springframework.transaction.annotation.Transactional;
@@ -27,15 +29,29 @@ import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.jhomlala.dao.PersonDao;
+import com.jhomlala.dao.WordsDaoImpl;
 import com.jhomlala.model.Person;
+import com.jhomlala.model.Word;
+import com.jhomlala.services.DateService;
+import com.jhomlala.services.WordService;
+
+
 
 
 @Controller
 public class DashboardController {
 
-
+	@Autowired
+	@Qualifier("wordService")
+	private WordService wordService;
+	
+	@Autowired
+	@Qualifier("dateService")
+	private DateService dateService;
+	
     @Autowired
     PasswordEncoder passwordEncoder;
+
 
 
 	@Transactional(readOnly = true)
@@ -71,7 +87,10 @@ public class DashboardController {
 
 		ModelAndView model = new ModelAndView();
 		model.setViewName("dashboardstats");
+		List<Word> wordList = wordService.getAll();
+		model.addObject("wordList",wordList);
 
+		model.addObject("lastDate",dateService.getLastDate());
 		return model;
 
 	}
