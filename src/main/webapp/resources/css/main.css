@@ -1,0 +1,295 @@
+body
+{
+	background-color:rgb(221,221,221);   
+}
+
+.main
+{
+	padding-left:20px;
+	padding-right:20px;
+	padding-top:10px;
+	padding-botoom:10px;
+}
+
+.post
+{
+	background-color:rgb(250,250,250);
+	width:100%;
+	border: 1px solid rgb(190,190,190);
+	border-bottom: 1px solid rgb(190,190,190);
+    border-radius: 2px;
+ 	padding:10px;
+ 	font-size:12px; 
+        
+}
+
+.post_table
+{
+	
+	
+}
+.post_table tr
+{
+	
+}
+.post_table td
+{
+	 vertical-align:top; 
+	 border-right: 1px solid rgb(190,190,190); 
+	 padding-right:10px;
+	 padding-left:10px;
+	 
+}
+.post_table th
+{
+	vertical-align:top; padding-left:10px
+}
+
+.post_table img
+{
+	border:1px solid rgb(190,190,190);
+}
+
+.rate_table
+{
+	align:center;
+}
+
+.rate_table tr
+{
+	border: 0px;
+	padding: 0px;
+}
+.rate_table td 
+{
+	border: 0px;
+	padding:0px;
+}
+
+.postadd
+{
+	align:center;
+	background-color:rgb(221,221,221); 
+	width:40%;
+	position: absolute;
+	top:10%;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	
+	margin: auto;
+	
+}
+
+.postadd h2
+{
+ 
+	background-color:rgb(54,167,133);
+	padding:10px;
+	color:rgb(255,255,255);
+	text-shadow: 2px 2px 2px rgba(0,0,0, 1);
+
+	
+}
+.postadd a
+{
+	
+}
+
+.profile
+{
+	align:center;
+	background-color:rgb(221,221,221); 
+	width:40%;
+	position: absolute;
+	top:10%;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	
+	margin: auto;
+	
+}
+
+.profile h2
+{
+ 
+	background-color:rgb(54,167,133);
+	padding:10px;
+	color:rgb(255,255,255);
+	text-shadow: 2px 2px 2px rgba(0,0,0, 1);
+	border: solid 1px rgb(200,200,200); 
+
+	
+}
+
+.profile h3
+{
+ 
+	background-color:rgb(54,167,133);
+	padding:10px;
+	color:rgb(255,255,255);
+	text-shadow: 2px 2px 2px rgba(0,0,0, 1);
+	border: solid 1px rgb(200,200,200); 
+
+	
+}
+.profile a
+{
+	
+}
+
+.green
+{
+	background-color:rgb(54,167,133);
+	color:rgb(255,255,255);
+	text-shadow: 2px 2px 2px rgba(0,0,0, 1);
+	padding:10px;
+	border: solid 1px rgb(200,200,200); 
+}
+
+.green img
+{
+	border:solid 1px rgb(150,150,150);
+}
+	
+.specialhr
+{
+	margin-top: 2px; margin-bottom: 2px }
+}
+
+/**************************
+  DEFAULT BOOTSTRAP STYLES
+**************************/
+
+.btn {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  padding: 10px 16px;
+}
+  
+.btn-lg {
+  font-size: 18px;
+  line-height: 1.33;
+  border-radius: 6px;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #428bca;
+  border-color: #357ebd;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary {
+  color: #fff;
+  background-color: #3276b1;
+  border-color: #285e8e;
+}
+
+/***********************
+  RAISED BUTTONS
+************************/
+.btn-primary.raised {
+    box-shadow: 0 3px 0 0 #007299;
+}
+.btn-primary.raised:active, .btn-primary.raised.active {
+    background: #33a6cc;
+    box-shadow: none;
+    margin-bottom: -3px;
+    margin-top: 3px;
+}
+
+/***********************
+  CUSTON BTN VALUES
+************************/
+
+.btn {
+    padding: 4px 4px; 
+    border: 0 none;
+    font-weight: 400; 
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size:8px; 
+}
+.btn:focus, .btn:active:focus, .btn.active:focus {
+    outline: 0 none;
+}
+
+.btn-primary {
+    background: #0099cc;
+    color: #ffffff;
+}
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
+    background: #33a6cc;
+}
+.btn-primary:active, .btn-primary.active {
+    background: #007299;
+    box-shadow: none;
+}
+
+.big 
+{
+	font-size:12px;
+}
+
+.center
+{
+	margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.comments
+{
+	margin-left: 15%; 
+ 
+}
+.comments img
+{
+	height:35px;
+	width:35px;
+}
+
+.points
+{
+
+	font-weight: 800;  
+	font-size:15px; 
+}
+
+.plus
+{ 
+	color: rgb(0,128,0); 
+}
+
+.minus 
+{
+	color: rgb(128,0,0); 
+}
+
+.iconvote img
+{
+	height: 20px;
+	width: 20px;
+	border: 0px solid;  
+}
+
