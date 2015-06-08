@@ -43,9 +43,9 @@ public class MyUserDetailsService implements UserDetailsService {
 	// org.springframework.security.core.userdetails.User
 	private User buildUserForAuthentication(com.jhomlala.model.Person user, List<GrantedAuthority> authorities) {
 		return new User(user.getLogin(), user.getPassword(), true, true, true, true, authorities);
-	}
+	} 
 
-	private List<GrantedAuthority> buildUserAuthority(List <PersonRole> roles) {
+	public List<GrantedAuthority> buildUserAuthority(List <PersonRole> roles) {
 
 		Set<GrantedAuthority> setAuths = new HashSet<GrantedAuthority>();
 

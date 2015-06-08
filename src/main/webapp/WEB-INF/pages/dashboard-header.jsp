@@ -45,6 +45,9 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+<script src="${contextPath}/resources/amcharts/amcharts.js" type="text/javascript"></script>
+        <script src="${contextPath}/resources/amcharts/serial.js" type="text/javascript"></script>
+
 </head>
 
 <body>
@@ -80,7 +83,7 @@
 			<!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
 			<div class="collapse navbar-collapse navbar-ex1-collapse">
 				<ul class="nav navbar-nav side-nav">
-					<li class="active"><a href="${contextPath}/dashboard"><i
+					<li ><a href="${contextPath}/dashboard"><i
 							class="fa fa-fw fa-dashboard"></i> Dashboard</a></li>
 					<li><a href="${contextPath}/dashboard/authors"><i class="fa fa-users"></i>
 							Authors</a></li>

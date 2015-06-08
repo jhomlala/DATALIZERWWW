@@ -50,7 +50,7 @@ public class AppConfig {
 		ds.setUrl("jdbc:mysql://datalizer.ovh:3306/");
 		ds.setUsername("database_admin");
 		ds.setPassword("My-strongPassword-Sql");
-		return ds;
+		return ds;  
 	}
 	
 	@Bean

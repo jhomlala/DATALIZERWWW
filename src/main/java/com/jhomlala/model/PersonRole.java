@@ -20,7 +20,11 @@ public class PersonRole{
 	private Integer personID;
 	private String role;
 
-	public PersonRole() {/**/}
+
+	public PersonRole()
+	{
+	}
+	
 	
 	@Id
 	@Column(name = "personRoleID", unique = true, nullable = false, length = 12)
@@ -28,18 +32,23 @@ public class PersonRole{
 		return personRoleID;
 	}
 
+
+
 	public void setPersonRoleID(Integer personRoleID) {
 		this.personRoleID = personRoleID;
 	}
+
 
 	@Column(name = "personID", unique = true, nullable = false, length = 12)
 	public Integer getPersonID() {
 		return personID;
 	}
 
+
 	public void setPersonID(Integer personID) {
 		this.personID = personID;
 	}
+
 
 	@Column(name = "role", nullable = false, length = 60)
 	public String getRole() {
@@ -49,4 +58,5 @@ public class PersonRole{
 	public void setRole(String role) {
 		this.role = role;
 	}
+
 }

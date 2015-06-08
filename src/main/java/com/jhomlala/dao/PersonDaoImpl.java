@@ -23,73 +23,6 @@ public class PersonDaoImpl implements PersonDao{
 	@Autowired
 	private SessionFactory sessionFactory;
 	
-	
-	@Override
-	
-	public int insert(Person person) 
-	{
-		Session session = sessionFactory.openSession();
-		int id=0;
-		 Transaction tx = null;
-		 try {
-			 if (findByLogin(person.getLogin())==null)
-			 {
-				 tx = session.beginTransaction();
-				 session.save(person);
-		     	 id = person.getId();
-			 }
-			 else return 1;
-		     
-		     tx.commit();
-		 }
-		 catch (Exception exc) {
-		     if (tx!=null) tx.rollback();
-		     
-		 }
-		 finally {
-		     session.close();
-		 }
-		anotherInsert(person,id);
-		return 0;
-	}
-
-	@SuppressWarnings("unchecked")
-	private int anotherInsert(Person person,int id)
-	{
-
-		Session session = sessionFactory.openSession();
-		 Transaction tx = null;
-		 try {
-			 if (findByLogin(person.getLogin())==null)
-			 {
-				 tx = session.beginTransaction();
-			 		for (PersonRole role : person.getRoles())
-			 		{
-			 			role.setPersonID(id);
-			 			session.save(role);
-			 		}
-
-		     
-		     tx.commit();
-			 }
-			 else return 1;
-		 }
-		 catch (Exception e) {
-		     if (tx!=null) tx.rollback();
-		  
-		 }
-		 finally {
-		     session.close();
-		 }
-		 
-		 return 0;
-	
-		
-	}
-
-	
-	
-
 	@SuppressWarnings("unchecked")
 	@Override
 	public Person findById(int id)
@@ -138,28 +71,7 @@ public class PersonDaoImpl implements PersonDao{
 
 	}
 	
-	@SuppressWarnings("unchecked")
-	@Override
-	public Person findByEmail(String email) {
-		List<Person> persons = new ArrayList<Person>();
 
-		persons = sessionFactory.getCurrentSession().createQuery("from Person where email=?").setParameter(0,email)
-				.list();
-
-		if (persons.size()>0)
-		{
-		
-			Person person = persons.get(0);
-			List <PersonRole> personRoles = new ArrayList<PersonRole>();
-			personRoles = sessionFactory.getCurrentSession().createQuery("from PersonRole where personID=?").setParameter(0,person.getId())
-					.list();
-			person.setRoles(personRoles);
-			return person;
-		}
-		
-		return null;
-
-	}
 	
 	
 

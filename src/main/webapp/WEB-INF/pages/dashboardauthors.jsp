@@ -34,6 +34,12 @@
                                     </tr>
                                 </thead>
                                 <tbody>
+                                	 <tr>
+                                        <td>Marek Olszanski</td>
+                                        <td>20-03-2015</td>
+                                        <td>CEO</td>
+                                        <td>Yes</td>
+                                    </tr>
                                     <tr>
                                         <td>Michal Lesniak</td>
                                         <td>20-03-2015</td>
@@ -49,13 +55,13 @@
                                       <tr>
                                         <td>Slawomir Pomazany</td>
                                         <td>20-03-2015</td>
-                                        <td>Java Developer</td>
+                                        <td>Java Web Developer</td>
                                         <td>Yes</td>
                                     </tr> 
                                       <tr>
                                         <td>Jakub Homlala</td>
                                         <td>20-03-2015</td>
-                                        <td>WEB Developer</td>
+                                        <td>Java Web Developer</td>
                                         <td>Yes</td>
                                     </tr>
                                       <tr>
@@ -65,15 +71,15 @@
                                         <td>Yes</td>
                                     </tr>
                                       <tr>
-                                        <td>?</td>
+                                        <td>Dominik Marciniszyn</td>
                                         <td>20-03-2015</td>
-                                        <td>?</td>
+                                        <td>Java Developer</td>
                                         <td>Yes</td>
                                     </tr>
                                              <tr>
-                                        <td>?</td>
+                                        <td>Marcin Pankiewcz</td>
                                         <td>20-03-2015</td>
-                                        <td>?</td>
+                                        <td>Graphic</td>
                                         <td>Yes</td>
                                     </tr>
                                              <tr>
